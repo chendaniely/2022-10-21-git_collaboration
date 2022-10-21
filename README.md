@@ -100,3 +100,7 @@ A convention people use for branches to separate "main"/"production" form "devel
 - Problem: I just want my files to be somewhere else (commit)
 	- solutions: `git reset --hard <HASH>`
 	- move HEAD and the branch you are on to whever you specifed <HASH>
+
+- Problem: I want to enforce a branch workflow
+	- solution: settings > branches > branch protection rule
+	- Note: if you're on your own, un-check review from 1 person
