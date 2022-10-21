@@ -1,4 +1,4 @@
-# 2022-10-21: git_collaboration
+# 2022-10-21: Git Collaboration
 
 ## Exercise 1
 
@@ -42,10 +42,48 @@
 - `git log --oneline --graph --all`: show you a decorated history log, your best friend (along with `git status`)
 - `git push <WHERE> <WHAT>`: `git push origin main` send branch `main` to remote `origin
 	- `git pull <WHERE> <WHAT>`: similar to `push` but goes from remote to local computer
+
+## Cleaning up branches + history
+
 - `git fetch`: update the git log
 	- `git fetch --prune`: remove any remote branches that have been deleted from the git log
 - `git branch -d <NAME>`: delete the branch <NAME> (local)
 
 - pull requests will auto update when you push changes to the branch
 
-Changes to readme on conflict 1
+## Rebase
+
+- `git fetch --prune`
+- `git switch main`
+- `git pull origin main`
+- `git switch conflict_2`
+- `git rebase main`
+
+- `git rebase`: command to change history, we are useing it to fix conflict
+	- `git rebase --abort`: go back to before you typed `git rebase`
+
+Quick commands to setup conflict
+
+```shell
+git checkout -b conflict_branch_1
+echo "Changes to b1 commit 1" >> README.md
+git status
+git add README.md
+git commit -m "b1 c1"
+echo "Changes to b1 commit 2" >> README.md
+git add README.md
+git commit -m "b1 c2"
+
+git checkout main
+
+git checkout -b conflict_branch_2
+echo "Changes to b2 commit 1" >> README.md
+git add README.md
+git commit -m "b2 c1"
+echo "Changes to b2 commit 2" >> README.md
+git add README.md
+git commit -m "b2 c2"
+
+git push origin conflict_branch_2
+git push origin conflict_branch_1
+```
