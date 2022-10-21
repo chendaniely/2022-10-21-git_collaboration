@@ -61,3 +61,29 @@
 
 - `git rebase`: command to change history, we are useing it to fix conflict
 	- `git rebase --abort`: go back to before you typed `git rebase`
+
+Quick commands to setup conflict
+
+```shell
+git checkout -b conflict_branch_1
+echo "Changes to b1 commit 1" >> README.md
+git status
+git add README.md
+git commit -m "b1 c1"
+echo "Changes to b1 commit 2" >> README.md
+git add README.md
+git commit -m "b1 c2"
+
+git checkout main
+
+git checkout -b conflict_branch_2
+echo "Changes to b2 commit 1" >> README.md
+git add README.md
+git commit -m "b2 c1"
+echo "Changes to b2 commit 2" >> README.md
+git add README.md
+git commit -m "b2 c2"
+
+git push origin conflict_branch_2
+git push origin conflict_branch_1
+```
