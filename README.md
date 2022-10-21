@@ -94,3 +94,9 @@ git push origin conflict_branch_1
 - https://www.atlassian.com/git/tutorials/comparing-workflows
 
 A convention people use for branches to separate "main"/"production" form "development" code
+
+## Extras
+
+- Problem: I just want my files to be somewhere else (commit)
+	- solutions: `git reset --hard <HASH>`
+	- move HEAD and the branch you are on to whever you specifed <HASH>
