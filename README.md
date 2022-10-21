@@ -1,4 +1,4 @@
-# 2022-10-21-git_collaboration
+# 2022-10-21: git_collaboration
 
 ## Exercise 1
 
@@ -47,3 +47,5 @@
 - `git branch -d <NAME>`: delete the branch <NAME> (local)
 
 - pull requests will auto update when you push changes to the branch
+
+Changes to readme on conflict 1
