@@ -87,3 +87,10 @@ git commit -m "b2 c2"
 git push origin conflict_branch_2
 git push origin conflict_branch_1
 ```
+
+## Git Flow
+
+- https://www.atlassian.com/git/tutorials/syncing
+- https://www.atlassian.com/git/tutorials/comparing-workflows
+
+A convention people use for branches to separate "main"/"production" form "development" code
