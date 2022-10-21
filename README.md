@@ -45,3 +45,5 @@
 - `git fetch`: update the git log
 	- `git fetch --prune`: remove any remote branches that have been deleted from the git log
 - `git branch -d <NAME>`: delete the branch <NAME> (local)
+
+- pull requests will auto update when you push changes to the branch
