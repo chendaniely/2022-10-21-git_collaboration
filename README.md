@@ -10,9 +10,12 @@
 4. `git add` and `git commit` your changes
 5. `git push` your changes back up to your github repository
 
+## Creating a local repository
 
 - `git clone <URL>`: "downloads" the repository to current directory
 	- `git init`: initializes the current directory as a git repository
+
+## Branches
 
 - `git branch <NAME>`: creates a branch <NAME> where HEAD is
 - `git branch -a`: list all the branches you have
