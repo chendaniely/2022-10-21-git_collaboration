@@ -1,0 +1,204 @@
+  129  cd git
+  130  ls
+  131  git clone git@github.com:chendaniely/2022-10-21-git_collaboration.git
+  132  ls
+  133  cd 2022-10-21-git_collaboration/
+  134  ls
+  135  ls -alh
+  136  code README.md
+  137  git status
+  138  git diff
+  139  git add README.md
+  140  git status
+  141  git commit -m "define clone and init"
+  142  git status
+  143  git push origin main
+  144  git remote -v
+  145  git log --oneline --graph --all
+  146  git branch my_first_branch
+  147  git branch -a
+  148  git status
+  149  git log --oneline --graph --all
+  150  git switch my_first_branch
+  151  git status
+  152  git branch -a
+  153  git log --oneline --graph --all
+  154  git aslkdjfasldkfklds
+  155  git --version
+  156  git status
+  157  git add README.md
+  158  git diff --staged
+  159  git commit -m "add exercise 1, define branch and switch"
+  160  git log --oneline --graph --all
+  161  git switch main
+  162  git log --oneline --graph --all
+  163  git switch my_first_branch
+  164  git log --oneline --graph --all
+  165  git status
+  166  git push origin my_first_branch
+  167  git log --oneline --graph --all
+  168  git status
+  169  git status
+  170  git add README.md
+  171  git status
+  172  gti commit -m "add headers"
+  173  git commit -m "add headers"
+  174  git status
+  175  git log --oneline --graph --all
+  176  git push origin my_first_branch
+  177  git switch main
+  178  git log --oneline --graph --all
+  179  git pull origin main
+  180  git log --oneline --graph --all
+  181  git fetch --prune
+  182  git log --oneline --graph --all
+  183  git branch -d my_first_branch
+  184  git log --oneline --graph --all
+  185  git log --oneline --graph --all
+  186  git switch -c branch_defs
+  187  git log --oneline --graph --al
+  188  git log --oneline --graph --all
+  189  git status
+  190  git diff
+  191  git add README.md
+  192  git commit -m "exercise 2 + definitions"
+  193  git push origin branch_defs
+  194  '
+  195  git status
+  196  git add README.md
+  197  git commit -m "PRs will update on branch push"
+  198  git push origin branch_defs
+  199  git status
+  200  git log --oneline --graph --all --prune
+  201  git log --oneline --graph --all
+  202  git fetch
+  203  git switch main
+  204  git log --oneline --graph --all
+  205  git switch main
+  206  git pull origin main
+  207  git log --oneline --graph --all
+  208  git branch -d branch_defs
+  209  git log --oneline --graph --all
+  210  git log --oneline --graph --all
+  211  git fetch
+  212  git log --oneline --graph --all
+  213  git fetch --prune
+  214  git log --oneline --graph --all
+  215  git log --oneline --graph --all
+  216  git status
+  217  git log --oneline --graph --all
+  218  git switch -c conflict_1
+  219  git status
+  220  git add README.md
+  221  git commit -m "changes to readme on conflict 1"
+  222  git push origin conflict_1
+  223  git switch main
+  224  git switch -c conflict 2
+  225  git switch -c conflict_2
+  226  git log --oneline --graph --all
+  227  git status
+  228  git add README.md
+  229  git commit -m "changes to readme from conflict 2"
+  230  git push origin conflict_2
+  231  git log --oneline --graph --all
+  232  git fetch
+  233  git log --oneline --graph --all
+  234  git switch main
+  235  git pull origin main
+  236  git log --oneline --graph --all
+  237  git fetch
+  238  git log --oneline --graph --all
+  239  git switch mian
+  240  git switch main
+  241  git pull origin main
+  242  git switch conflict_2
+  243  git log --oneline --all --graph
+  244  git rebase main
+  245  git status
+  246  git rebase --abort
+  247  git rebase main
+  248  cat README.md
+  249  git status
+  250  git add README.md
+  251  git status
+  252  git rebase --continue
+  253  git rebase --continue
+  254  git status
+  255  git log --oneline --graph --all
+  256  git status
+  257  git diff
+  258  git add README.md
+  259  git commit -m "quick commands to create conflicts"
+  260  git status
+  261  git log --oneline --graph --all
+  262  git push origin conflict_2
+  263  git push --force origin conflict_2
+  264  git status
+  265  git checkout main
+  266  git pull origin main
+  267  git fetch --prune
+  268  git fetch --prune
+  269  git branch -a
+  270  git branch -d conflict_1 conflict_2
+  271  git log --oneline --graph --all
+  272  git switch -c devlop
+  273  git log --oneline --graph --all
+  274  git push origin devlop
+  275  git switch -c git_flow
+  276  git status
+  277  git diff
+  278  git add README.md
+  279  git commit -m "links to git flow"
+  280  git push origin git_flow
+  281  git fetch --prune
+  282  git log --oneline --graph --all
+  283  git branch -d git_flow
+  284  git checkout devlop
+  285  git branch -d git_flow
+  286  git branch -D git_flow
+  287  git log --oneline --graph --all
+  288  git log --oneline
+  289  git log --oneline --all
+  290  git switch develop
+  291  git switch devlop
+  292  git reset --hard cf62001
+  293  git log --oneline --all
+  294  git switch -c git_reset
+  295  git status
+  296  git add README.md
+  297  git status
+  298  git commit -m "git reset --hard"
+  299  git push origin git_reset
+  300  git switch develop
+  301  git switch devlop
+  302  git pull origin devlop
+  303  git switch main
+  304  git switch devlop
+  305  git switch main
+  306  git pull origin main
+  307  git fetch --prune
+  308  git branch -a
+  309  git branch -d devlop git_reset
+  310  git l
+  311  git switch -c dev
+  312  git push origin dev
+  313  git switch main
+  314  git status
+  315  git add README.md
+  316  gti commit -m "branch protection alisjfdlksdjflkajdslfjsdlk"
+  317  git commit -m "branch protection alisjfdlksdjflkajdslfjsdlk"
+  318  git log
+  319  git log --oneline
+  320  git rebase -i HEAD~2
+  321  git log --oneline
+  322  git log --oneline --all
+  323  git push origin
+  324  git push origin main
+  325  git push -f origin main
+  326  nano README.md `
+  327  git status
+  328  git add README.md
+  329  git commit -m "git rebase -i"
+  330  git push origin main
+  331  git log --oneline --graph --all
+  332  history
