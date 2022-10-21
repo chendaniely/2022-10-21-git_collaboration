@@ -104,3 +104,5 @@ A convention people use for branches to separate "main"/"production" form "devel
 - Problem: I want to enforce a branch workflow
 	- solution: settings > branches > branch protection rule
 	- Note: if you're on your own, un-check review from 1 person
+
+- `git rebase -i HEAD~10`: do an interactive rebase with the last 10 commits
